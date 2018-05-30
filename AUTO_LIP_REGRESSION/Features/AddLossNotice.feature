@@ -8,5 +8,5 @@ Scenario Outline: scenario description
 		And Close browser
 Examples:
 |                      URL                            |
-|https://cert1-intranet-apps.fsa.usda.gov/lip/login.do|
+|*****************************************************|
 

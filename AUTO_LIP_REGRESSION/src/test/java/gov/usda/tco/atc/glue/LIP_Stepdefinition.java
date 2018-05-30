@@ -34,8 +34,8 @@ public  class  LIP_Stepdefinition {
 		driver.get("https://cert1-intranet-apps.fsa.usda.gov/lip/login.do");
 		
 		//String encryptedPass= 
-		driver.findElement(By.xpath("//*[@id='USERID']")).sendKeys("TCO_CS022965");	
-		AtcWebElement.findElement(driver.findElement(By.xpath("//*[@id='PASS']"))).sendSecureKeys("ub4TFXMeYa9fYBAsvDc1HQ==");
+		driver.findElement(By.xpath("//*[@id='USERID']")).sendKeys("****");	
+		AtcWebElement.findElement(driver.findElement(By.xpath("//*[@id='PASS']"))).sendSecureKeys("**************");
 		driver.findElement(By.xpath("//*[@id=\"ibLogin\"]")).click();
 
 		wait = new WebDriverWait(driver, 20);
@@ -89,7 +89,7 @@ public  class  LIP_Stepdefinition {
 
 				// SCIMS search..
 				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("taxId")));
-				AtcWebElement.findElement(driver.findElement(By.id("taxId"))).sendSecureKeys("laGaqU7QxZgC+IPT8NwW6w==");
+				AtcWebElement.findElement(driver.findElement(By.id("taxId"))).sendSecureKeys("************");
 				driver.findElement(By.xpath("//input[@id='last4digitsId']")).click();
 				driver.findElement(By.name("Search")).click();
 				driver.findElement(By.xpath("/html/body/div/div[4]/div/div/form/table/tbody/tr/td/fieldset/table[1]/tbody/tr[2]/td[3]/font/a")).click();
